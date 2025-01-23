@@ -1,11 +1,12 @@
-function Footer() {
+const Contact = () => {
   return (
-    <footer className="footer">
-      <h2>By Elhadj. My Portfolio 2025. All rights reserved.</h2>
+    <div>
+      <h1> Feel free to Contact me by elhadj@me.com</h1>
+
       <ul>
         <li>
           <a href="https://github.com/Elhadj-Bah" target="_blank">
-            GitHub
+            <strong>GitHub</strong>
           </a>
         </li>
         <li>
@@ -13,12 +14,12 @@ function Footer() {
             href="https://www.linkedin.com/in/elhadj-bah-b5a91b274"
             target="_blank"
           >
-            LinkedIn
+            <strong> LinkedIn </strong>
           </a>
         </li>
       </ul>
-    </footer>
+    </div>
   );
-}
+};
 
-export default Footer;
+export default Contact;

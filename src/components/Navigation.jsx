@@ -1,12 +1,31 @@
-import React from 'react'
-import Header from './header'
+import { Link } from "react-router-dom";
 
-function Navigation() {
+const Layout = () => {
   return (
-    <div>
-      <Header />
-    </div>
-  )
-}
+    <>
+      <section className="header">
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about">About me</Link>
+            </li>
+            <li>
+              <Link to="/portfolio">Portfolio</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact</Link>
+            </li>
+            <li>
+              <Link to="/resume">Resume</Link>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </>
+  );
+};
 
-export default Navigation
+export default Layout;

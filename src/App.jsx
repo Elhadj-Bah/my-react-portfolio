@@ -1,17 +1,20 @@
-import { useState } from 'react'
-import './App.css'
-import Navigation from './components/navigation.jsx';
-import Project from './components/Project.jsx';
-import Footer from './components/footer.jsx';
+import { Outlet } from "react-router-dom";
+import Navigation from "./components/navigation";
+import Header from "./components/header";
+import Footer from "./components/footer";
+import Project from "./components/Project";
 
 function App() {
-
   return (
     <>
-    <Navigation />
-    <Project/>
-    <Footer />
+      <main>
+        <Navigation />
+        <Header />
+        <Outlet />
+        <Project />
+        <Footer />
+      </main>
     </>
-  )
+  );
 }
-export default App
+export default App;
