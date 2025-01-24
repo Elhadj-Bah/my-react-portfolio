@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const Layout = () => {
+const Navigation = () => {
   return (
     <>
       <section className="header">
@@ -28,4 +28,4 @@ const Layout = () => {
   );
 };
 
-export default Layout;
+export default Navigation;
